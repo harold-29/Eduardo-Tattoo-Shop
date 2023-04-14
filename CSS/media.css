@@ -1,0 +1,225 @@
+@media screen and (max-width: 1460px) {
+  .servicios-horario .contenedor {
+    grid-template-areas:
+      "service-text"
+      "service-img";
+  }
+
+  .servicios-horario .contenedor .texto_section {
+    grid-area: service-text;
+  }
+
+  .servicios-horario .contenedor .img_section {
+    grid-area: service-img;
+  }
+}
+
+@media (max-width: 1080px) {
+  .header {
+    height: 90px;
+  }
+  /* .header .logo_pagina {
+    height: 75px;
+  } */
+  .titulo_welcome {
+    font-size: 4vw;
+  }
+  .section {
+    margin: 0px;
+  }
+
+  .enlaces li a {
+    font-size: 15px;
+  }
+
+  .offcanvas-body ul li a {
+    font-size: 20px;
+  }
+
+  
+}
+
+@media (max-width: 960px) {
+  .contenedor {
+    grid-template-columns: repeat(auto-fit, minmax(90vw, 1fr));
+  }
+
+  .slide_down_botton {
+    top: -90px;
+  }
+
+  .who_we_are .contenedor {
+    padding-top: 0px;
+  }
+
+  .contenedor {
+    grid-template-areas:
+      "service-text"
+      "service-img";
+  }
+
+  .contenedor .texto_section {
+    grid-area: service-text;
+  }
+
+  .contenedor .img_section {
+    grid-area: service-img;
+  }
+
+  .columns {
+    flex-direction: column;
+  }
+
+  .section .texto_section {
+    padding-bottom: 10vh;
+  }
+
+  .articulos {
+    padding-top: 5vh;
+  }
+
+  .aside {
+    padding-top: 0;
+  }
+
+  .title-footer {
+    font-size: 15px;
+  }
+
+  .footer li {
+    font-size: 12px;
+  }
+
+  .footer p {
+    font-size: 12px;
+  }
+
+  .container-about-us {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "texto-que-hacemos "
+      "imagen-1"
+      "texto-historia1"
+      "imagen-2 "
+      "texto-historia2 "
+      "imagen-3 "
+      "texto-historia3 ";
+  }
+
+  .parrafo_section {
+    font-size: 25px;
+  }
+
+  .title_section {
+    font-size: 32px;
+  }
+
+  .texto_section ul li {
+    font-size: 22px;
+  }
+
+  table tr td,
+  table tr th {
+    font-size: 20px;
+  }
+}
+
+/* Ajuste del tamaño de letra en el titulo principal */
+@media (max-width: 720px) {
+  .texto_welcome {
+    left: 6%;
+    width: 30vw;
+  }
+
+  .titulo_welcome {
+    font-size: 5vw;
+  }
+}
+
+/* Incremento  del márgen inferior del aside cuando hay mas de 961px de ancho para que quede mejor separado del footer*/
+@media (min-width: 961px) {
+  .aside {
+    margin-bottom: 10vh;
+  }
+}
+/* Incremento  del márgen inferior del aside cuando hay mas de 720px de altura para que quede mejor separado del footer*/
+@media (min-height: 720px) {
+  .aside {
+    margin-bottom: 10vh;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .welcome {
+    height: 55vh;
+    background-image: url(/assets/images/general/maquina_tatuar.png);
+    background-size: 100% 100%;
+  }
+
+}
+
+@media screen and (max-width: 500px) {
+
+
+  .texto_welcome {
+    left: 12%;
+    top: 53%;
+  }
+
+  .titulo_welcome {
+    font-size: 6vw;
+  }
+
+  .img_section {
+    height: inherit;
+  }
+
+  .carousel-inner {
+    height: 50vh;
+  }
+
+  .articulos {
+    height: 60vh;
+  }
+}
+
+/* Reposicionamiento del texto en el carrucel */
+
+@media screen and (max-width: 880px) {
+  .enlaces {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .video_carousel1 {
+    display: none;
+  }
+
+  .video_carousel2 {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .table1 {
+    display: none;
+  }
+  .table2 {
+    display: block;
+  }
+}
+
+@media (max-width: 800px) {
+  .caption_parrafo {
+    display: none;
+  }
+}
+
+@media (max-height: 750px) and ((max-width: 1130px)) {
+  .caption_parrafo {
+    display: none;
+  }
+}

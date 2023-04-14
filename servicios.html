@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="assets/images/general/logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <link rel="stylesheet" href="CSS/media.css" />
+    <title>EDUARDO TATTO SHOP / Servicios</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <!-- Barra de navegación -->
+      <nav class="fixed-top nav_bar">
+        <!-- <div class="container-fluid"> -->
+        <a href="index.html#inicio" class="logo_pagina">
+          <img
+            src="assets/images/general/logo.png"
+            alt="imágen del logo de la empresa"
+        /></a>
+        <ul class="enlaces">
+          <li><a href="about_us.html">¿Quienes somos?</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="designs.html">Diseños</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="#contactos">Contáctenos</a></li>
+        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <i class="fa-solid fa-bars icono-burger"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Eduardo Tatto Shop
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">¿Quienes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="designs.html">Diseños</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="videos.html">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contactos">Contáctenos</a>
+              </li>
+            </ul>
+          </div>
+          <!-- </div> -->
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-services">
+      <!-- Servicio -->
+      <section class="servicios-horario">
+        <article class="contenedor">
+          <div class="texto_section">
+            <h1 class="title_section">Servicios</h1>
+            <p class="parrafo_section">
+              Te brindamos un servicio con un coste mínimo de 20.000 que puede
+              aumentar según ciertas características.
+            </p>
+          </div>
+          <div class="img_section">
+            <div class="texto_section">
+              <div class="tabla">
+                <caption>
+                  <h1 class="title_section">Horario de trabajo</h1>
+                </caption>
+                <table class="table1">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Lunes</th>
+                      <th>Martes</th>
+                      <th>Míercoles</th>
+                      <th>Jueves</th>
+                      <th>Viernes</th>
+                      <th>Sábado</th>
+                      <th>Domingo</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    <tr>
+                      <td>Primera sesión</td>
+                      <td colspan="6">10:00 a 14:00</td>
+                      <td rowspan="3">Cerrado</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td colspan="6">Descanso</td>
+                    </tr>
+                    <tr>
+                      <td>Segunda sesión</td>
+                      <td colspan="6">16:00 a 19:00</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br />
+                <table class="table2">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Primera sesión</th>
+                      <th></th>
+                      <th>Segunda sesión</th>
+                    </tr>
+                  </thead>
+                  <tbody class="table-group-divider">
+                    <tr>
+                      <td>Lunes</td>
+                      <td rowspan="6">10:00 a 14:00</td>
+                      <td rowspan="6">Descanso</td>
+                      <td rowspan="6">16:00 a 19:00</td>
+                    </tr>
+                    <tr>
+                      <td>Martes</td>
+                    </tr>
+                    <tr>
+                      <td>Míercoles</td>
+                    </tr>
+                    <tr>
+                      <td>Jueves</td>
+                    </tr>
+                    <tr>
+                      <td>Viernes</td>
+                    </tr>
+                    <tr>
+                      <td>Sábado</td>
+                    </tr>
+                    <tr>
+                      <td>Domingo</td>
+                      <td colspan="3">Cerrado</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </article>
+      </section>
+      <!-- Sección de Estilos -->
+      <section class="estilos">
+        <article class="contenedor">
+          <div class="texto_section">
+            <h1 class="title_section">Estilos</h1>
+            <p class="parrafo_section">
+              Nuestro estilos son variados como podras apreciar en nuestra
+              galería de diseños de los cuales te podemos mencionar:
+            </p>
+            <ul>
+              <li><i class="fa-solid fa-pen-to-square"></i> Realismo</li>
+              <li><i class="fa-solid fa-pen-to-square"></i> Escritos</li>
+              <li><i class="fa-solid fa-pen-to-square"></i> Acuarela</li>
+              <li><i class="fa-solid fa-pen-to-square"></i> Góticos</li>
+              <li><i class="fa-solid fa-pen-to-square"></i> Japonès</li>
+              <li><i class="fa-solid fa-pen-to-square"></i> Tradicional</li>
+            </ul>
+          </div>
+          <div class="img_section">
+            <img
+              class="img_apartado"
+              src="assets/images/servicio/estilos.png"
+              alt="imágen con varios tatuajes con diferentes estilos"
+            />
+          </div>
+        </article>
+      </section>
+      <!-- Variaciones del Tatuaje -->
+      <section class="variacion-precio section">
+        <article class="contenedor">
+          <div class="img_section">
+            <img
+              class="img_apartado"
+              src="assets/images/designs/m1.png"
+              alt="imágen con varios tatuajes con diferentes estilos"
+            />
+          </div>
+          <div class="texto_section">
+            <h1 class="title_section">Variación de precio</h1>
+            <p class="parrafo_section">El precio puede variar según:</p>
+            <ul>
+              <li><i class="fa-sharp fa-solid fa-paintbrush"></i> El tamaño</li>
+              <li><i class="fa-sharp fa-solid fa-paintbrush"></i> Estilo</li>
+              <li>
+                <i class="fa-sharp fa-solid fa-paintbrush"></i> Cantidad de
+                Relleno
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+
+      <!-- Cuidados-->
+      <section class="cuidados-texto">
+        <article class="contenedor">
+          <div class="texto_section">
+            <h1 class="title_section">Cuidados</h1>
+            <div class="parrafo_section">
+              <p>
+                Los tatuajes hay que cuidarlos después de terminada la sesión
+              </p>
+              <p>
+                A continuación te dejamos una lista de cuidados para despúes de
+                la sesión:
+              </p>
+            </div>
+            <ul>
+              <li>
+                <i class="fa-solid fa-notes-medical"></i>
+                Escucha los cuidados que te dan nuestro tatuadores
+              </li>
+              <li>
+                <i class="fa-solid fa-notes-medical"></i>
+                Déjate el vendaje puesto de 2 a 3 horas
+              </li>
+              <li>
+                <i class="fa-solid fa-notes-medical"></i>
+                Lavarse las manos para remover el vendaje
+              </li>
+              <li>
+                <i class="fa-solid fa-notes-medical"></i>
+                Lava el tatuaje con agua tibia y jabón antibacterial
+              </li>
+              <li>
+                <i class="fa-solid fa-notes-medical"></i>
+                Déjalo secar naturalmente o con ligeros toques con una toalla
+                limpia
+              </li>
+              <li>
+                <i class="fa-solid fa-notes-medical"></i>
+                Aplica una crema antibacterial sin perfume
+              </li>
+            </ul>
+          </div>
+          <div class="img_section">
+            <img
+              class="img_apartado"
+              src="assets/images/servicio/cuidado.png"
+              alt="imágen con cremas que ayudan al cuidado de los tatuajes"
+            />
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer id="contactos" class="footer">
+      <div class="info-contacto">
+        <h3>Contáctenos</h3>
+        <ul>
+          <li>
+            <a
+              href="https://api.whatsapp.com/send/?phone=50685550337&text&type=phone_number&app_absent=0"
+              target="_blank"
+              ><i class="fa-brands fa-whatsapp"></i
+              ><span> +(506)8555-0337</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/badilla_edu.art/" target="_blank"
+              ><i class="fa-brands fa-instagram"> </i
+              ><span> @badilla_edu.art</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.facebook.com/eddobadillatattoo" target="_blank"
+              ><i class="fa-brands fa-facebook"></i
+              ><span> Eduardo Badilla Tattoos</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.tiktok.com/@eddobadillatattoo" target="_blank"
+              ><i class="fa-brands fa-tiktok"></i
+              ><span> @eddobadillatattoo</span></a
+            >
+          </li>
+          <li>
+            <a href="https://twitter.com/BadillaEddo" target="_blank"
+              ><i class="fa-brands fa-twitter"></i><span> @BadillaEddo</span></a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="info-direccion">
+        <h4>Dirección</h4>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Costado Este del parque
+          Palmares, frente a parada de taxis, en Alajuela centro., Alajuela,
+          Costa Rica, 20101
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/db9da4ce5b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
