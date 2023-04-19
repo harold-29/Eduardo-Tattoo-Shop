@@ -135,7 +135,6 @@ ul {
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  
 }
 
 .enlaces li:hover {
@@ -143,37 +142,33 @@ ul {
   transition: 0.6s;
 }
 
-.container_inicio {
+/* .container_inicio {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
     "welcome"
     "who_we_are"
     "services"
-    "carousel"
-    "aside  ";
-}
+    "carousel";
+} */
 
-.caja .welcome {
+.welcome {
   grid-area: welcome;
   overflow: hidden;
 }
 
-.caja .who_we_are {
+.who_we_are {
   grid-area: who_we_are;
   height: auto;
 }
 
-.caja .articulos {
+.articulos {
   grid-area: carousel;
 }
 
-.caja .services {
+.services {
   grid-area: services;
-}
-
-.caja .aside {
-  grid-area: aside;
 }
 
 .contenedor {
@@ -187,9 +182,6 @@ ul {
   margin-top: 5vh;
 }
 
-.who_we_are .contenedor {
-  padding-top: 20vh;
-}
 
 /* Sección de bienvenida */
 .welcome {
@@ -197,10 +189,11 @@ ul {
   display: inline-block;
   text-align: center;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   background-image: url(../assets/images/general/maquina_tatuar.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
+
 }
 
 .texto_welcome {
@@ -233,6 +226,9 @@ ul {
 
 /* Sección de información de la empresa */
 
+.who_we_are .contenedor {
+  padding-top: 20vh;
+}
 .texto_who_we_are {
   text-align: center;
   margin-top: auto;
@@ -406,11 +402,11 @@ ul {
   padding-bottom: 3vh;
 }
 
-label{
+label {
   font-size: 3vh;
 }
 
-.boton-enviar{
+.boton-enviar {
   font-size: 3vh;
 }
 
@@ -671,4 +667,21 @@ th {
   width: 350px;
   height: auto;
   border-radius: 30px;
+}
+
+/* Contáctenos */
+
+.seccion_formulario{
+  margin: 40px 0;
+
+}
+
+.seccion_formulario__title{
+  text-align: center;
+  font-weight: bold;
+}
+
+.seccion_mapa{
+  text-align: center;
+  margin: 30px 0;
 }
