@@ -121,7 +121,7 @@
         <form class="information">
           <fieldset>
             <div class="mb-3">
-              <label class="formulario__label"  for="nombre">Nombre:</label>
+              <label class="formulario__label" for="nombre">Nombre:</label>
               <input
                 class="form-control"
                 type="text"
@@ -163,8 +163,14 @@
                 class="form-control"
                 type="text"
                 id="telefono"
-                placeholder="85489613"
+                placeholder="+506-2343-7643"
               />
+            </div>
+            <div class="mb-3 texto-error" id="texto-error">
+              <p>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <b>Error:</b> por favor llenar el formulario correctamente
+              </p>
             </div>
             <div class="mb-3">
               <input
@@ -172,6 +178,11 @@
                 type="button"
                 value="Enviar"
               />
+              <div class="texto-correcto">
+                <p class="texto_envio" id="texto_envio">
+                  Datos enviados exitosamente!
+                </p>
+              </div>
             </div>
           </fieldset>
         </form>

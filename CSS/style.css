@@ -689,6 +689,7 @@ th {
 }
 
 .boton-enviar {
+  display: block;
   font-size: 20px;
   margin: 10px auto;
   width: 150px;
@@ -697,4 +698,21 @@ th {
 .seccion_mapa {
   width: 600px;
   margin: 10px auto;
+}
+
+.texto-error{
+  line-height: 45px;
+  background-color: #f66060;
+  padding: 0 15px;
+  border-radius: 15px;
+  display: none;
+}
+
+.texto-correcto{
+  font-size: 14px;
+  background-color: #119200;
+  text-align: center;
+  width: 300px;
+  margin: 10px auto;
+  display: none;
 }
