@@ -75,7 +75,7 @@
   }
 
   .articulos {
-    padding-top: 5vh;
+    padding-top: 7vh;
   }
 
   .aside {
@@ -133,6 +133,10 @@
 
   .titulo_welcome {
     font-size: 5vw;
+  }
+
+  .seccion_mapa{
+    width: 85vw;
   }
 }
 
