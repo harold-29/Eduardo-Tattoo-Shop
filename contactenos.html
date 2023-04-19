@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Harold Francisco Badilla Umaña" />
+    <meta
+      name="description"
+      content="Eduardo Badilla Tatto, es un estudio ubicado en la zona de Alajuela, Costa Rica que diseña y ofrece tatuajes de calidad a buen costo"
+    />
+
+    <meta
+      name="keywords"
+      content="Tatto Tatuaje Tatuajes_Costa_Rica Tatuajes_Alajuela_Costa_Rica Eduardo_Badilla_Umaña"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +21,6 @@
       href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
       rel="stylesheet"
     />
-
     <link
       rel="shortcut icon"
       href="assets/images/general/logo.png"
@@ -29,11 +38,11 @@
 
     <link rel="stylesheet" href="CSS/media.css" />
 
-    <title>EDUARDO TATTO SHOP / Sobre Nosotros</title>
+    <title>EDUARDO TATTO SHOP / Contáctenos</title>
   </head>
 
   <body>
-    <span id="about_us"></span>
+    <span id="contactenos"></span>
     <header class="header">
       <!-- Barra de navegación -->
       <nav class="fixed-top nav_bar">
@@ -44,11 +53,11 @@
             alt="imágen del logo de la empresa"
         /></a>
         <ul class="enlaces">
-          <li><a href="#about_us">¿Quienes somos?</a></li>
+          <li><a href="about_us.html">¿Quienes somos?</a></li>
           <li><a href="servicios.html">Servicios</a></li>
           <li><a href="designs.html">Diseños</a></li>
           <li><a href="videos.html">Videos</a></li>
-          <li><a href="contactenos.html">Contáctenos</a></li>
+          <li><a href="#contactenos">Contáctenos</a></li>
         </ul>
         <button
           class="navbar-toggler"
@@ -83,7 +92,7 @@
                 <a class="nav-link" href="index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#about_us">¿Quienes somos?</a>
+                <a class="nav-link" href="about_us.html">¿Quienes somos?</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="servicios.html">Servicios</a>
@@ -95,7 +104,7 @@
                 <a class="nav-link" href="videos.html">Videos</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contactenos.html">Contáctenos</a>
+                <a class="nav-link" href="#contactenos">Contáctenos</a>
               </li>
             </ul>
           </div>
@@ -103,107 +112,95 @@
       </nav>
     </header>
 
-    <main class="container-about-us">
-      <!-- Sección de Descripción de la empresa -->
-      <section class="section-que-hacemos section">
-        <article class="contenedor">
-          <div class="texto_section">
-            <h1 class="title_section">¿Qúe hacemos?</h1>
-            <p class="parrafo_section">
-              Nosotros nos dedicamos al arte del tatuaje, el cual llevamos a
-              cabo según el diseño o de las ideas que el cliente nos brinde.
-            </p>
-            <p class="parrafo_section">
-              Para posterior plasmarlo en su cuerpo con el estilo y colores que
-              nos solicita
-            </p>
-          </div>
-          <div class="img_section">
-            <img
-              class="img_apartado"
-              src="assets/images/inicio/who_we_are.png"
-              alt="imágen del dueño realizando un tatuaje"
-            />
-          </div>
-        </article>
+    <main class="container_inicio">
+      <!--  -->
+      <section class="seccion seccion_formulario">
+        <h2 class="seccion_formulario__title">
+          ¿Desea recibir información sobre nuestras ofertas y eventos?
+        </h2>
+        <form class="information">
+          <fieldset>
+            <div class="mb-3">
+              <label class="formulario__label" for="nombre">Nombre:</label>
+              <input
+                class="form-control"
+                type="text"
+                id="nombre"
+                required
+                minlength="3"
+                maxlength="80"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="mb-3">
+              <label class="formulario__label" for="apellidos"
+                >Apellidos:</label
+              >
+              <input
+                class="form-control"
+                type="text"
+                id="apellidos"
+                required
+                minlength="10"
+                maxlength="100"
+                placeholder="Apellidos"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="formulario__label" for="correo">Correo:</label>
+              <input
+                class="form-control"
+                type="email"
+                id="correo"
+                placeholder="example@gmail.com"
+              />
+            </div>
+
+            <div class="mb-3">
+              <label class="formulario__label" for="telefono">Teléfono:</label>
+              <input
+                class="form-control"
+                type="text"
+                id="telefono"
+                placeholder="+506-2343-7643"
+              />
+            </div>
+            <div class="mb-3 texto-error" id="texto-error">
+              <p>
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                <b>Error:</b> por favor llenar el formulario correctamente
+              </p>
+            </div>
+            <div class="mb-3">
+              <input
+                class="btn btn-dark boton-enviar"
+                type="button"
+                value="Enviar"
+              />
+              <div class="texto-correcto">
+                <p class="texto_envio" id="texto_envio">
+                  Datos enviados exitosamente!
+                </p>
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </section>
 
-      <!-- Historia sección 1-->
-
-      <section class="historia1 section">
-        <article class="contenedor">
-          <div class="img_section">
-            <img
-              class="img_apartado"
-              src="assets/images/aboutus/trabajosprevios.jpg"
-              alt="imágen del dueño en sus inicios realizando un tatuaje"
-            />
-          </div>
-          <div class="texto_section">
-            <h1 class="title_section">Historia</h1>
-            <p class="parrafo_section">
-              En el 2003 teniendo 14 años y sin recordar bien el porqué, salió
-              una frase que recordamos mi mejor amigo y yo... "Quero ser
-              tatuador"
-            </p>
-
-            <p class="parrafo_section">
-              Y desde ese momento empezó una búsqueda insaciable por ser uno de
-              los mejores tatuadores del país en algún momento
-            </p>
-          </div>
-        </article>
-      </section>
-
-      <!-- Historia sección 2-->
-
-      <section class="historia2 section">
-        <article class="contenedor">
-          <div class="texto_section">
-            <p class="parrafo_section">
-              En el 2008 tenía mucha teoría en mi cabeza pero nada de práctica
-              hasta que conocí personas que con ingenio hicieron máquinas
-              caseras ahí crecío más mi deseo
-            </p>
-
-            <p class="parrafo_section">
-              Amigos se unieron a este aprendizaje y práctica junto conmigo pero
-              no fue constante y tuve que dejarlo de lado un tiempo
-            </p>
-          </div>
-          <div class="img_section">
-            <img
-              class="img_apartado"
-              src="assets/images/aboutus/historia.png"
-              alt="imágen del stand de la empresa en una convención"
-            />
-          </div>
-        </article>
-      </section>
-
-      <!-- Sección de Historia 3 -->
-
-      <section class="historia3 section">
-        <div class="texto_section">
-          <p class="parrafo_section">
-            Siendo misceláneo en un banco un amigo me presentó la oportunidad
-            que cambiaría mi vida por completo... una ayuda económica para
-            invertir en equipo nuevo
-          </p>
-
-          <p class="parrafo_section">
-            Y así comencé el camino más difícil también un búsqueda por
-            conseguir lo que hace muchos años atrás anhelaba a ser
-          </p>
-
-          <p class="parrafo_section">
-            Eso fue en el 2013.. Hoy por hoy no soy el mejor y creo que tampoco
-            estoy cerca, pero tengo la esperanza de que algún día lograré mi
-            cometido
-          </p>
-        </div>
+      <section class="seccion_mapa">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2859.6108858634043!2d-84.21464354336635!3d10.019100338295555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9cfbd015875%3A0x4e0a4dea3e1e571e!2sEduardo%20Badilla%20Tattoos!5e0!3m2!1ses!2scr!4v1681859262356!5m2!1ses!2scr"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </section>
     </main>
+
     <footer id="contactos" class="footer">
       <div class="info-contacto">
         <h3 class="title-footer">Contáctenos</h3>

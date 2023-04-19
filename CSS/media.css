@@ -35,8 +35,6 @@
   .offcanvas-body ul li a {
     font-size: 20px;
   }
-
-  
 }
 
 @media (max-width: 960px) {
@@ -75,7 +73,7 @@
   }
 
   .articulos {
-    padding-top: 5vh;
+    padding-top: 7vh;
   }
 
   .aside {
@@ -134,6 +132,10 @@
   .titulo_welcome {
     font-size: 5vw;
   }
+
+  .seccion_mapa {
+    width: 85vw;
+  }
 }
 
 /* Incremento  del márgen inferior del aside cuando hay mas de 961px de ancho para que quede mejor separado del footer*/
@@ -156,11 +158,21 @@
     background-size: 100% 100%;
   }
 
+  .title_section{
+    font-size: 25px;
+
+  }
+
+  .parrafo_section {
+    font-size: 17px;
+  }
+
+  .img_apartado {
+    height: 400px;
+  }
 }
 
 @media screen and (max-width: 500px) {
-
-
   .texto_welcome {
     left: 12%;
     top: 53%;
@@ -181,6 +193,16 @@
   .articulos {
     height: 60vh;
   }
+
+  .carousel-caption{
+    width: 150px;
+    margin: 0 auto;
+  }
+
+  .carousel-caption h5{
+    font-size: 15px;
+  }
+
 }
 
 /* Reposicionamiento del texto en el carrucel */
@@ -210,6 +232,10 @@
   .table2 {
     display: block;
   }
+
+  .estilos {
+    margin-top: 50px;
+  }
 }
 
 @media (max-width: 800px) {
@@ -221,5 +247,15 @@
 @media (max-height: 750px) and ((max-width: 1130px)) {
   .caption_parrafo {
     display: none;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .table_section {
+    display: none;
+  }
+
+  .section_horario {
+    display: block;
   }
 }

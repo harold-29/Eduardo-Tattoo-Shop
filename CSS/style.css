@@ -45,7 +45,7 @@ ul {
   padding-top: 0px;
   background-color: rgb(0, 0, 0);
   z-index: 90;
-  height: 15vh;
+  height: 12vh;
 }
 
 .nav_bar {
@@ -121,7 +121,7 @@ ul {
 .enlaces li {
   display: inline-block;
   height: 40%;
-  margin: 4% 5px;
+  margin: 2.6% 5px;
   border-radius: 20px 20px 20px 20px;
   background-color: black;
   padding: 5px 7px 4%;
@@ -135,7 +135,6 @@ ul {
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
-  
 }
 
 .enlaces li:hover {
@@ -143,37 +142,33 @@ ul {
   transition: 0.6s;
 }
 
-.container_inicio {
+/* .container_inicio {
   display: grid;
+  width: 100%;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
     "welcome"
     "who_we_are"
     "services"
-    "carousel"
-    "aside  ";
-}
+    "carousel";
+} */
 
-.caja .welcome {
+.welcome {
   grid-area: welcome;
   overflow: hidden;
 }
 
-.caja .who_we_are {
+.who_we_are {
   grid-area: who_we_are;
   height: auto;
 }
 
-.caja .articulos {
+.articulos {
   grid-area: carousel;
 }
 
-.caja .services {
+.services {
   grid-area: services;
-}
-
-.caja .aside {
-  grid-area: aside;
 }
 
 .contenedor {
@@ -187,17 +182,13 @@ ul {
   margin-top: 5vh;
 }
 
-.who_we_are .contenedor {
-  padding-top: 20vh;
-}
-
 /* Sección de bienvenida */
 .welcome {
   position: relative;
   display: inline-block;
   text-align: center;
   height: 90vh;
-  width: 100vw;
+  width: 100%;
   background-image: url(../assets/images/general/maquina_tatuar.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -233,6 +224,9 @@ ul {
 
 /* Sección de información de la empresa */
 
+.who_we_are .contenedor {
+  padding-top: 20vh;
+}
 .texto_who_we_are {
   text-align: center;
   margin-top: auto;
@@ -255,12 +249,13 @@ ul {
 .texto_section {
   margin: auto 0px;
   text-align: center;
-  padding: 10% 0px;
+  padding: 5% 0px 10%;
 }
 
 .parrafo_section {
   padding: 30px 10% 0px;
-  font-size: 3vh;
+  font-size: 2.5vh;
+  font-weight: 600;
 }
 
 .texto_section ul li {
@@ -268,15 +263,14 @@ ul {
 }
 
 .img_section {
-  height: inherit;
   margin-left: auto;
   margin-right: auto;
   height: 70vh;
 }
 
 .img_apartado {
-  height: 90%;
-  width: 100%;
+  height: 450px;
+  width: 500px;
   border-radius: 20%;
   box-shadow: 0px 25px 10px;
 }
@@ -323,7 +317,7 @@ ul {
   color: rgba(255, 255, 255, 0.897);
   background-color: rgba(204, 204, 204, 0.671);
   font-weight: 600;
-  bottom: 2rem;
+  bottom: 4rem;
 }
 
 .carousel-caption p {
@@ -353,7 +347,7 @@ ul {
 }
 .carousel-indicators {
   z-index: 50;
-  margin-bottom: 2.7rem;
+  margin-bottom: 4rem;
 }
 
 .carousel-cards {
@@ -384,41 +378,17 @@ ul {
 
 .video_carousel1 {
   width: 100%;
+  height: 100%;
 }
 
 .video_carousel2 {
   display: none;
   margin: 0 auto;
+  height: 100%;
 }
 
 .titulo-articulos {
   margin: 0px 0px 2vh;
-}
-
-.aside {
-  padding-top: 10vh;
-  text-align: center;
-  padding-bottom: 5vh;
-}
-
-.aside h3 {
-  padding-top: 3vh;
-  padding-bottom: 3vh;
-}
-
-label{
-  font-size: 3vh;
-}
-
-.boton-enviar{
-  font-size: 3vh;
-}
-
-.information {
-  text-align: left;
-  width: 70%;
-  margin: 0px auto;
-  font-weight: bold;
 }
 
 .footer {
@@ -580,6 +550,16 @@ label{
   background-color: white;
 }
 
+.table_section {
+  margin-left: auto;
+  margin-right: auto;
+  height: 70vh;
+}
+
+.section_horario {
+  display: none;
+}
+
 td,
 th {
   border: 3px solid black;
@@ -671,4 +651,68 @@ th {
   width: 350px;
   height: auto;
   border-radius: 30px;
+}
+
+/* Contáctenos */
+
+.seccion_formulario {
+  margin: 40px 0;
+}
+
+.seccion_formulario__title {
+  text-align: center;
+  font-weight: bold;
+}
+
+.seccion_mapa {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.mb-3 {
+  width: 800px;
+  margin: 0 auto;
+}
+
+.information {
+  text-align: left;
+  width: 70%;
+  margin: 30px auto;
+  font-weight: bold;
+}
+
+.formulario__label {
+  display: block;
+  font-size: 18px;
+  margin-right: auto;
+  text-align: left;
+}
+
+.boton-enviar {
+  display: block;
+  font-size: 20px;
+  margin: 10px auto;
+  width: 150px;
+}
+
+.seccion_mapa {
+  width: 600px;
+  margin: 10px auto;
+}
+
+.texto-error{
+  line-height: 45px;
+  background-color: #f66060;
+  padding: 0 15px;
+  border-radius: 15px;
+  display: none;
+}
+
+.texto-correcto{
+  font-size: 14px;
+  background-color: #119200;
+  text-align: center;
+  width: 300px;
+  margin: 10px auto;
+  display: none;
 }
