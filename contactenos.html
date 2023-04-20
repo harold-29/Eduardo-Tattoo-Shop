@@ -41,7 +41,7 @@
     <title>EDUARDO TATTO SHOP / Contáctenos</title>
   </head>
 
-  <body>
+  <body id="body">
     <span id="contactenos"></span>
     <header class="header">
       <!-- Barra de navegación -->
@@ -118,7 +118,7 @@
         <h2 class="seccion_formulario__title">
           ¿Desea recibir información sobre nuestras ofertas y eventos?
         </h2>
-        <form class="information">
+        <form class="formulario" id="formulario">
             <!-- Grupo: Nombre -->
             <div class="formulario__grupo" id="grupo__nombre">
               <label for="nombre" class="formulario__label">Nombre:</label>
@@ -136,7 +136,7 @@
                   <input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="Barrantes">
                   <i class="fa-regular fa-circle-xmark formulario__validacion-estado"></i>
               </div>
-              <p class="formulario__input-error">El apellidos debe contener solo puede contener letras.</p>
+              <p class="formulario__input-error">El campo apellidos solo puede contener letras.</p>
             </div>
 
             <!-- Grupo: E-mail -->
@@ -168,30 +168,27 @@
               </div>
           </div>
 
-            <div class="formulario__grupo formulario__mensaje" id="texto-error">
+            <div class="formulario__grupo formulario__mensaje" id="formulario__mensaje">
               <p>
                 <i class="fa-solid fa-triangle-exclamation"></i>
                 <b>Error:</b> por favor llenar el formulario correctamente
               </p>
             </div>
             <div class="formulario__grupo">
-              <input
-                class="btn btn-dark boton-enviar"
-                type="button"
-                value="Enviar"
-              />
+              <button class="btn btn-dark boton-enviar" type="submit">Enviar</button>
             </div>
         </form>
       </section>
 
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+
+      <button id="btn_ejecutar_modal" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-target="#staticBackdrop">
         Launch demo modal
       </button>
 
       <!-- Modal -->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
               <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
@@ -206,6 +203,23 @@
           </div>
         </div>
       </div>
+
+      <dialog id="modal" class="ownModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="textoModal" id="textoModal"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </dialog>
 
       <section class="seccion_mapa">
         <iframe
@@ -288,7 +302,6 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
-
 
     <script src="JS/script.js" type="text/javascript" async></script>
   </body>
