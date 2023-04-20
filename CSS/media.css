@@ -18,14 +18,17 @@
   .header {
     height: 90px;
   }
-  /* .header .logo_pagina {
-    height: 75px;
-  } */
+
   .titulo_welcome {
     font-size: 4vw;
   }
   .section {
     margin: 0px;
+  }
+
+  .historia3 {
+    margin-bottom: 80px;
+    margin-top: 30px;
   }
 
   .enlaces li a {
@@ -34,6 +37,14 @@
 
   .offcanvas-body ul li a {
     font-size: 20px;
+  }
+
+  .img_section {
+    height: inherit;
+  }
+
+  .container_inicio {
+    gap: 13vh 0;
   }
 }
 
@@ -136,6 +147,10 @@
   .seccion_mapa {
     width: 85vw;
   }
+  .information{
+    width: 80vw;
+  }
+
 }
 
 /* Incremento  del márgen inferior del aside cuando hay mas de 961px de ancho para que quede mejor separado del footer*/
@@ -155,12 +170,10 @@
   .welcome {
     padding-bottom: 50px;
     background-size: 100% 90%;
-
   }
 
-  .title_section{
+  .title_section {
     font-size: 25px;
-
   }
 
   .parrafo_section {
@@ -168,7 +181,8 @@
   }
 
   .img_apartado {
-    height: 400px;
+    height: 300px;
+    width: 350px;
   }
 }
 
@@ -182,10 +196,6 @@
     font-size: 6vw;
   }
 
-  .img_section {
-    height: inherit;
-  }
-
   .carousel-inner {
     height: 50vh;
   }
@@ -194,14 +204,15 @@
     height: 60vh;
   }
 
-  .carousel-caption{
+  .carousel-caption {
     width: 150px;
     margin: 0 auto;
   }
 
-  .carousel-caption h5{
+  .carousel-caption h5 {
     font-size: 15px;
   }
+
 
 }
 
@@ -222,6 +233,10 @@
 
   .video_carousel2 {
     display: block;
+  }
+
+  .header{
+    height: 60px;
   }
 }
 

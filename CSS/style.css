@@ -45,7 +45,7 @@ ul {
   padding-top: 0px;
   background-color: rgb(0, 0, 0);
   z-index: 90;
-  height: 12vh;
+  height: 10vh;
 }
 
 .nav_bar {
@@ -144,7 +144,6 @@ ul {
 
 .container_inicio {
   display: grid;
-  gap: 5vh 0;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
     "welcome"
@@ -270,8 +269,8 @@ ul {
 }
 
 .img_apartado {
-  height: 450px;
-  width: 500px;
+  height: 500px;
+  width: 550px;
   border-radius: 20%;
   box-shadow: 0px 25px 10px;
 }
@@ -502,6 +501,7 @@ ul {
   padding: 0 100px;
 }
 
+
 /* Servicios */
 
 .container-services {
@@ -654,10 +654,16 @@ th {
   border-radius: 30px;
 }
 
-/* Contáctenos */
+/* Videos */
 
-.seccion_formulario {
-  margin: 40px 0;
+.galeria-videos{
+  text-align: center;
+  margin: 100px 0;
+}
+
+/* Contáctenos */
+.container_contacts{
+  margin: 40px 40px;
 }
 
 .seccion_formulario__title {
