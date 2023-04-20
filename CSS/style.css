@@ -199,7 +199,7 @@ ul {
   top: 60%;
   left: 4%;
   height: 12vh;
-  color: white;
+  color: rgba(234, 234, 234, 0.928);
 }
 
 .titulo_welcome {
@@ -218,7 +218,6 @@ ul {
   );
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
   font-weight: bolder;
 }
 
@@ -426,6 +425,10 @@ ul {
 .columns {
   display: flex;
   flex-direction: row;
+}
+
+.columns ul li{
+  padding: 4px 0;
 }
 
 .info-contacto a {
@@ -738,7 +741,8 @@ th {
 }
 
 .formulario__input-error {
-  font-size: 12px;
+  font-weight: 500;
+  font-size: 15px;
   margin-bottom: 0;
   display: none;
 }
@@ -761,7 +765,6 @@ th {
 }
 
 .formulario__mensaje {
-  height: 45px;
   line-height: 45px;
   background-color: #f66060;
   padding: 0 15px;
@@ -781,7 +784,6 @@ th {
   display: block;
   font-size: 20px;
   margin: 10px auto;
-  width: 150px;
 }
 
 .formulario__mensaje-exito-activo {
@@ -811,4 +813,8 @@ th {
 
 .formulario__grupo-incorrecto .formulario__input {
   border: 3px solid #bb2929;
+}
+
+.modal-body{
+  text-align: center;
 }

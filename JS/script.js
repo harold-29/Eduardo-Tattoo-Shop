@@ -1,6 +1,8 @@
 const formulario = document.getElementById("formulario");
 const inputs = document.querySelectorAll("#formulario input");
 
+const miModal = new bootstrap.Modal(document.getElementById("miModal"));
+
 const expresiones = {
   nombre: /^[a-zA-ZÀ-ÿ\s]{1,30}$/, // Letras y espacios, pueden llevar acentos.
   apellidos: /^[a-zA-ZÀ-ÿ\s]/, // Letras y espacios, pueden llevar acentos.
@@ -83,26 +85,26 @@ inputs.forEach((input) => {
   input.addEventListener("blur", validarFormulario);
 });
 
-
 // Función para verficar el envio de manera correcta y afectar el html con los mensajes correctos
 formulario.addEventListener("submit", (e) => {
   e.preventDefault();
 
+  document.getElementById("boton_enviar").innerHTML = '<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Procesando...';
+  document.getElementById("boton_enviar").disabled = true;
+
+  setTimeout(() => {
+    document.getElementById("boton_enviar").innerHTML = "Enviar";
+    document.getElementById("boton_enviar").disabled = false;
+  }, 3000);
+
   if (campos.nombre && campos.apellidos && campos.correo && campos.telefono) {
     // Mostrar el mensaje de datos enviados
-    const modal = document.getElementById('exampleModal');
-   
-   
-    // document.getElementById('formulario__mensaje-exito').classList.add('formulario__mensaje-exito-activo');
 
-    // setTimeout(() => {
+    setTimeout(() => {
+      miModal.show();
+    }, 3000);
 
-    //   document.getElementById('formulario__mensaje-exito').classList.remove('formulario__mensaje-exito-activo');
-
-    // }, 3000);
     //   Ocultar los iconos de correcto
-
-    document.getElementById("exampleModal").ariaModal = "true";
 
     document
       .querySelectorAll(".formulario__grupo-correcto")
@@ -116,8 +118,12 @@ formulario.addEventListener("submit", (e) => {
     //   Colocar los espacios en blanco
     formulario.reset();
   } else {
-    document
+
+    setTimeout(() => {
+      document
       .getElementById("formulario__mensaje")
       .classList.add("formulario__mensaje-exito-activo");
+    }, 3000);
+
   }
 });
