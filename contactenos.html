@@ -119,74 +119,93 @@
           ¿Desea recibir información sobre nuestras ofertas y eventos?
         </h2>
         <form class="information">
-          <fieldset>
-            <div class="mb-3">
-              <label class="formulario__label" for="nombre">Nombre:</label>
-              <input
-                class="form-control"
-                type="text"
-                id="nombre"
-                required
-                minlength="3"
-                maxlength="80"
-                placeholder="Nombre"
-              />
-            </div>
-            <div class="mb-3">
-              <label class="formulario__label" for="apellidos"
-                >Apellidos:</label
-              >
-              <input
-                class="form-control"
-                type="text"
-                id="apellidos"
-                required
-                minlength="10"
-                maxlength="100"
-                placeholder="Apellidos"
-              />
+            <!-- Grupo: Nombre -->
+            <div class="formulario__grupo" id="grupo__nombre">
+              <label for="nombre" class="formulario__label">Nombre:</label>
+              <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Marcus">
+                  <i class="fa-regular fa-circle-xmark formulario__validacion-estado"></i>
+              </div>
+              <p class="formulario__input-error">El nombre debe contener de 4 a 16 caractéres y solo puede contener letras.</p>
             </div>
 
-            <div class="mb-3">
-              <label class="formulario__label" for="correo">Correo:</label>
-              <input
-                class="form-control"
-                type="email"
-                id="correo"
-                placeholder="example@gmail.com"
-              />
+            <!-- Grupo: Apellidos -->
+            <div class="formulario__grupo" id="grupo__apellidos">
+              <label for="apellidos" class="formulario__label">Apellidos:</label>
+              <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="apellidos" id="apellidos" placeholder="Barrantes">
+                  <i class="fa-regular fa-circle-xmark formulario__validacion-estado"></i>
+              </div>
+              <p class="formulario__input-error">El apellidos debe contener solo puede contener letras.</p>
             </div>
 
-            <div class="mb-3">
-              <label class="formulario__label" for="telefono">Teléfono:</label>
-              <input
-                class="form-control"
-                type="text"
-                id="telefono"
-                placeholder="+506-2343-7643"
-              />
+            <!-- Grupo: E-mail -->
+            <div class="formulario__grupo" id="grupo__correo">
+              <label for="correo" class="formulario__label">Correo Electrónico:</label>
+              <div class="formulario__grupo-input">
+                  <input type="text" class="formulario__input" name="correo" id="correo" placeholder="marBar3@example.com">
+                  <!-- <input type="email" class="formulario__input" name="correo" id="correo" placeholder="example@example.com"> -->
+                  <i class="fa-regular fa-circle-xmark formulario__validacion-estado"></i>
+              </div>
+              <p class="formulario__input-error">El correo solo puede contener número, letras, punto y guíon bajo.</p>
+            </div> 
+
+            <!-- Grupo: Teléfono -->
+            <div class="formulario__grupo" id="grupo__telefono">
+                <label for="telefono" class="formulario__label">Teléfono:</label>
+                <div class="formulario__grupo-input">
+                    <input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="85329503">
+                    <i class="fa-regular fa-circle-xmark formulario__validacion-estado"></i>
+                </div>
+                <p class="formulario__input-error">El teléfono solo puede contenedr número y el máximo son 8 dígitos.</p>
             </div>
-            <div class="mb-3 texto-error" id="texto-error">
+
+          <!-- Grupo: Comentarios -->
+          <div class="formulario__grupo" id="grupo__comentarios">
+              <label for="comentarios" class="formulario__label">Comentarios:</label>
+              <div class="formulario__grupo-input">
+              <textarea name="comentarios" id="comentarios" cols="30" rows="10" class="formulario_textarea formulario__input"  placeholder="Dejenos sus opiniones"></textarea>
+              </div>
+          </div>
+
+            <div class="formulario__grupo formulario__mensaje" id="texto-error">
               <p>
                 <i class="fa-solid fa-triangle-exclamation"></i>
                 <b>Error:</b> por favor llenar el formulario correctamente
               </p>
             </div>
-            <div class="mb-3">
+            <div class="formulario__grupo">
               <input
                 class="btn btn-dark boton-enviar"
                 type="button"
                 value="Enviar"
               />
-              <div class="texto-correcto">
-                <p class="texto_envio" id="texto_envio">
-                  Datos enviados exitosamente!
-                </p>
-              </div>
             </div>
-          </fieldset>
         </form>
       </section>
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <p class="textoModal" id="textoModal"></p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section class="seccion_mapa">
         <iframe
@@ -269,5 +288,8 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+
+
+    <script src="JS/script.js" type="text/javascript" async></script>
   </body>
 </html>
