@@ -154,7 +154,7 @@
 @media screen and (max-width: 550px) {
   .welcome {
     height: 55vh;
-    background-image: url(/assets/images/general/maquina_tatuar.png);
+    background-image: url(assets/images/general/maquina_tatuar.png);
     background-size: 100% 100%;
   }
 
