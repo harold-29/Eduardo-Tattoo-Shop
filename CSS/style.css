@@ -142,16 +142,17 @@ ul {
   transition: 0.6s;
 }
 
-/* .container_inicio {
+.container_inicio {
   display: grid;
-  width: 100%;
+  gap: 5vh 0;
   grid-template-columns: repeat(1, 1fr);
   grid-template-areas:
     "welcome"
     "who_we_are"
     "services"
-    "carousel";
-} */
+    "articulos";
+  overflow: hidden;
+}
 
 .welcome {
   grid-area: welcome;
@@ -164,7 +165,7 @@ ul {
 }
 
 .articulos {
-  grid-area: carousel;
+  grid-area: articulos;
 }
 
 .services {
