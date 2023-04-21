@@ -565,9 +565,12 @@ ul {
 }
 
 .table_section {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   height: 70vh;
+}
+
+.table_section .texto_section{
+  padding: 12% 0 5%;
 }
 
 .section_horario {
@@ -648,24 +651,62 @@ th {
   width: 100%;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0px;
 }
 
 .card-design {
   margin: 15px;
+  border-radius: 30px;
 }
 
-.galeria-designs img {
+.card-design_img {
   width: 280px;
   height: 310px;
-  border-radius: 30px;
+  border-radius: 25px;
+  opacity: 0.9;
+  border: rgb(67, 67, 67) solid 3px;
+  transition: 0.5s ease-in-out;
 }
 
 .galeria-designs video {
   width: 350px;
   height: auto;
   border-radius: 30px;
+  border: solid 4px black;
 }
+
+
+.card-design_img-zoom {
+  border: rgb(27, 27, 27) solid 3px;
+  opacity: 1;
+  filter: contrast(150%);
+  width: 330px;
+  height: 370px;
+  transition: 0.5s ease-in-out;
+}
+
+.descripcionImg{
+  width: 0px;
+  position: relative;
+  bottom: 15%;
+  background-color: rgba(205, 204, 204, 0.414);
+  font-size: 0px;
+  margin: 0 auto;
+  transition: 0.8s ease;
+  border-radius: 6px ;
+}
+
+.descripcionImg-activo{
+  width: 315px;
+  font-weight: 600;
+  bottom: 19%;
+  background-color: rgba(134, 134, 134, 0.855);
+  font-size: 17px;
+  transition: 1s ease;
+  padding: 0 6px;
+
+}
+
+
 
 /* Videos */
 
@@ -679,6 +720,10 @@ th {
   margin: 40px 40px;
 }
 
+.seccion_formulario{
+  margin-bottom: 40px;
+}
+
 .seccion_formulario__title {
   text-align: center;
   font-weight: bold;
@@ -687,11 +732,6 @@ th {
 .seccion_mapa {
   text-align: center;
   margin: 30px 0;
-}
-
-.mb-3 {
-  width: 800px;
-  margin: 0 auto;
 }
 
 .information {
@@ -793,7 +833,7 @@ th {
 .boton-enviar {
   display: block;
   font-size: 20px;
-  margin: 10px auto;
+  margin: 20px auto;
 }
 
 .formulario__mensaje-exito-activo {
