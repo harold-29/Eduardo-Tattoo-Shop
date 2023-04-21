@@ -251,6 +251,10 @@
   .estilos {
     margin-top: 50px;
   }
+
+  .servicios-horario .table_section{
+    margin-bottom: 30%;
+  }
 }
 
 @media (max-width: 800px) {

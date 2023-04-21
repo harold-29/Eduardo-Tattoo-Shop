@@ -1,7 +1,12 @@
 
+let videos = document.querySelectorAll('video');
+
+videos.forEach(v => {
+  v.volume = 0.1;
+});
+
 const video = document.getElementById('video');
 
-video.volume = 0.1;
 
 const options = {
   threshold: 0.5 // Define el porcentaje de visibilidad del elemento en el viewport
