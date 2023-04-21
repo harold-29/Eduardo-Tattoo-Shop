@@ -1,344 +1,343 @@
-
 <!-- 
   Proyecto de Páginas Web
   Harold Francisco Badilla Umaña
   24/03/2023
  -->
 
- <!DOCTYPE html>
- <html lang="es">
-   <head>
-     <meta charset="UTF-8" />
-     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <meta name="author" content="Harold Francisco Badilla Umaña" />
-     <meta
-       name="description"
-       content="Eduardo Badilla Tatto, es un estudio ubicado en la zona de Alajuela, Costa Rica que diseña y ofrece tatuajes de calidad a buen costo"
-     />
- 
-     <meta
-       name="keywords"
-       content="Tatto Tatuaje Tatuajes_Costa_Rica Tatuajes_Alajuela_Costa_Rica Eduardo_Badilla_Umaña"
-     />
- 
-     <link rel="preconnect" href="https://fonts.googleapis.com" />
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-     <link
-       href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
-       rel="stylesheet"
-     />
-     <link
-       rel="shortcut icon"
-       href="assets/images/general/logo.png"
-       type="image/x-icon"
-     />
- 
-     <link
-       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-       rel="stylesheet"
-       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-       crossorigin="anonymous"
-     />
- 
-     <link rel="stylesheet" href="CSS/style.css" />
- 
-     <link rel="stylesheet" href="CSS/media.css" />
- 
-     <title>EDUARDO TATTO SHOP</title>
-   </head>
- 
-   <body>
-     <span id="inicio"></span>
-     <header class="header">
-       <!-- Barra de navegación -->
-       <nav class="fixed-top nav_bar">
-         <!-- <div class="container-fluid"> -->
-         <a href="#inicio" class="logo_pagina">
-           <img
-             src="assets/images/general/logo.png"
-             alt="imágen del logo de la empresa"
-         /></a>
-         <ul class="enlaces">
-           <li><a href="about_us.html">¿Quienes somos?</a></li>
-           <li><a href="servicios.html">Servicios</a></li>
-           <li><a href="designs.html">Diseños</a></li>
-           <li><a href="videos.html">Videos</a></li>
-           <li><a href="contactenos.html">Contáctenos</a></li>
-         </ul>
-         <button
-           class="navbar-toggler"
-           type="button"
-           data-bs-toggle="offcanvas"
-           data-bs-target="#offcanvasNavbar"
-           aria-controls="offcanvasNavbar"
-         >
-           <!-- <i class="fa-solid fa-bars"></i> -->
-           <i class="fa-solid fa-bars icono-burger"></i>
-         </button>
-         <div
-           class="offcanvas offcanvas-end"
-           tabindex="-1"
-           id="offcanvasNavbar"
-           aria-labelledby="offcanvasNavbarLabel"
-         >
-           <div class="offcanvas-header">
-             <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-               Eduardo Tatto Shop
-             </h5>
-             <button
-               type="button"
-               class="btn-close"
-               data-bs-dismiss="offcanvas"
-               aria-label="Close"
-             ></button>
-           </div>
-           <div class="offcanvas-body">
-             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-               <li class="nav-item">
-                 <a class="nav-link" href="#inicio">Inicio</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="about_us.html">¿Quienes somos?</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="servicios.html">Servicios</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="designs.html">Diseños</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="videos.html">Videos</a>
-               </li>
-               <li class="nav-item">
-                 <a class="nav-link" href="contactenos.html">Contáctenos</a>
-               </li>
-             </ul>
-           </div>
-         </div>
-       </nav>
-     </header>
- 
-     <main class="container_inicio">
-       <!-- Sección de bienvenida donde habra una imagen de fondo y un título -->
-       <section class="welcome">
-         <div class="texto_welcome">
-           <h1 class="titulo_welcome">EDUARDO TATTO SHOP</h1>
-         </div>
-       </section>
- 
-       <!-- Sección de ¿Quienes somos? -->
-       <section id="who_we_are" class="who_we_are section">
-         <article class="contenedor">
-           <div class="texto_section">
-             <h2 class="title_section">¿Quienes somos?</h2>
-             <p class="parrafo_section">
-               Somos un negocio que se dedica al arte corporal, específicamente
-               al área del tatuaje el cual es antendido y administrado únicamente
-               por su dueño.
-             </p>
-           </div>
-           <div class="img_section">
-             <img
-               src="assets/images/aboutus/quienessomos.png"
-               alt="imágen de presentacíon con el logo y redes sociales de la empresa"
-               class="img_apartado"
-             />
-           </div>
-         </article>
-       </section>
-       <!-- Sección de Servicios -->
-       <section class="services section" id="services">
-         <article class="contenedor">
-           <div class="img_section">
-             <img
-               class="img_apartado"
-               src="assets/images/inicio/tatto_buho.png"
-               alt="imágen de un tatuaje de buho"
-             />
-           </div>
-           <div class="texto_section">
-             <h2 class="title_section">Servicios</h2>
-             <p class="parrafo_section">
-               Como ya se menciono ofrecemos un servicio de tatuajes, con un
-               costo mínimo que puede variar según ciertas características que
-               usted desee.
-             </p>
-             <p class="parrafo_section">
-               Si estas interesado contáctenos por nuestras redes sociales para
-               agendar tu cita
-             </p>
-           </div>
-         </article>
-       </section>
-       <!-- Sección de Artículos -->
-       <section class="articulos" id="articulos">
-         <div
-           id="carouselExampleDark"
-           class="carousel carousel-dark slide pointer-event"
-         >
-           <div class="carousel-indicators">
-             <button
-               type="button"
-               data-bs-target="#carouselExampleDark"
-               data-bs-slide-to="0"
-               class="active"
-               aria-current="true"
-               aria-label="Slide 1"
-             ></button>
-             <button
-               type="button"
-               data-bs-target="#carouselExampleDark"
-               data-bs-slide-to="1"
-               aria-label="Slide 2"
-             ></button>
-           </div>
-           <div class="carousel-inner">
-             <div class="carousel-item active" data-bs-interval="10000">
-               <div class="carousel-cards">
-                 <img
-                 class="carousel_img-izq"
-                   src="assets/images/designs/a8.png"
-                   alt="imagen de tatuajes"
-                 />
-                 <img
-                   src="assets/images/designs/a3.png"
-                   alt="imagen de tatuajes"
-                 />
-                 <img
-                   src="assets/images/designs/a4.png"
-                   alt="imagen de tatuajes"
-                 />
-                 <img
-                   src="assets/images/designs/t1.png"
-                   alt="imagen de tatuajes"
-                 />
-                 <img
-                 class="carousel_img-der"
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Harold Francisco Badilla Umaña" />
+    <meta
+      name="description"
+      content="Eduardo Badilla Tatto, es un estudio ubicado en la zona de Alajuela, Costa Rica que diseña y ofrece tatuajes de calidad a buen costo"
+    />
 
-                   src="assets/images/designs/s10.png"
-                   alt="imagen de tatuajes"
-                 />
-               </div>
-               <div class="carousel-caption">
-                 <h5>Fotos</h5>
-                 <p class="caption_parrafo">
-                   Podrás ver varios trabajos realizados por nosotros y así
-                   tomar ideas para tu diseño.
-                 </p>
-               </div>
-             </div>
-             <div class="carousel-item" data-bs-interval="2000">
-               <video
-                 class="video_carousel1 "
-                 src="assets/videos/catrina.mp4"
-                 controls
-               ></video>
-               <video
-               class="video_carousel2"
-               src="assets/videos/batman.mp4"
-               controls
-             ></video>
-               <div class="carousel-caption">
-                 <h5>Videos</h5>
-                 <p class="caption_parrafo">
-                   Puedes ver algunos videos sobre nuestro proceso de trabajo
-                   en esta sección.
-                 </p>
-               </div>
-             </div>
-           </div>
-           <button
-             class="carousel-control-prev"
-             type="button"
-             data-bs-target="#carouselExampleDark"
-             data-bs-slide="prev"
-           >
-             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Previous</span>
-           </button>
-           <button
-             class="carousel-control-next"
-             type="button"
-             data-bs-target="#carouselExampleDark"
-             data-bs-slide="next"
-           >
-             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-             <span class="visually-hidden">Next</span>
-           </button>
-         </div>
-       
-       </section>
-     </main>
- 
-     <footer id="contactos" class="footer">
-       <div class="info-contacto">
-         <h3 class="title-footer">Contáctenos</h3>
-         <div class="columns">
-           <ul>
-             <li>
-               <a
-                 href="https://api.whatsapp.com/send/?phone=50685550337&text&type=phone_number&app_absent=0"
-                 target="_blank"
-                 ><i class="fa-brands fa-whatsapp"></i
-                 ><span> +(506)8555-0337</span></a
-               >
-             </li>
-             <li>
-               <a
-                 href="https://www.instagram.com/badilla_edu.art/"
-                 target="_blank"
-                 ><i class="fa-brands fa-instagram"> </i
-                 ><span> @badilla_edu.art</span></a
-               >
-             </li>
-             <li>
-               <a
-                 href="https://www.facebook.com/eddobadillatattoo"
-                 target="_blank"
-                 ><i class="fa-brands fa-facebook"></i
-                 ><span> Eduardo Badilla Tattoos</span></a
-               >
-             </li>
-           </ul>
-           <ul>
-             <li>
-               <a
-                 href="https://www.tiktok.com/@eddobadillatattoo"
-                 target="_blank"
-                 ><i class="fa-brands fa-tiktok"></i
-                 ><span> @eddobadillatattoo</span></a
-               >
-             </li>
-             <li>
-               <a href="https://twitter.com/BadillaEddo" target="_blank"
-                 ><i class="fa-brands fa-twitter"></i
-                 ><span> @BadillaEddo</span></a
-               >
-             </li>
-           </ul>
-         </div>
-       </div>
-       <div class="info-direccion">
-         <h4 class="title-footer">Dirección</h4>
-         <p>
-           <i class="fa-solid fa-location-dot"></i> Costado Este del parque
-           Palmares, frente a parada de taxis, en Alajuela centro., Alajuela,
-           Costa Rica, 20101
-         </p>
-       </div>
-     </footer>
- 
-     <script
-       src="https://kit.fontawesome.com/db9da4ce5b.js"
-       crossorigin="anonymous"
-     ></script>
- 
-     <script
-       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
-       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
-       crossorigin="anonymous"
-     ></script>
-   </body>
- </html>
- 
+    <meta
+      name="keywords"
+      content="Tatto Tatuaje Tatuajes_Costa_Rica Tatuajes_Alajuela_Costa_Rica Eduardo_Badilla_Umaña"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="shortcut icon"
+      href="assets/images/general/logo.png"
+      type="image/x-icon"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="CSS/style.css" />
+
+    <link rel="stylesheet" href="CSS/media.css" />
+
+    <title>EDUARDO TATTO SHOP</title>
+  </head>
+
+  <body>
+    <span id="inicio"></span>
+    <header class="header">
+      <!-- Barra de navegación -->
+      <nav class="fixed-top nav_bar">
+        <!-- <div class="container-fluid"> -->
+        <a href="#inicio" class="logo_pagina">
+          <img
+            src="assets/images/general/logo.png"
+            alt="imágen del logo de la empresa"
+        /></a>
+        <ul class="enlaces">
+          <li><a href="about_us.html">¿Quienes somos?</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="designs.html">Diseños</a></li>
+          <li><a href="videos.html">Videos</a></li>
+          <li><a href="contactenos.html">Contáctenos</a></li>
+        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+        >
+          <!-- <i class="fa-solid fa-bars"></i> -->
+          <i class="fa-solid fa-bars icono-burger"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              Eduardo Tatto Shop
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about_us.html">¿Quienes somos?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="designs.html">Diseños</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="videos.html">Videos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contactenos.html">Contáctenos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container_inicio">
+      <!-- Sección de bienvenida donde habra una imagen de fondo y un título -->
+      <section class="welcome">
+        <div class="texto_welcome">
+          <h1 class="titulo_welcome">EDUARDO TATTO SHOP</h1>
+        </div>
+      </section>
+
+      <!-- Sección de ¿Quienes somos? -->
+      <section id="who_we_are" class="who_we_are section">
+        <article class="contenedor">
+          <div class="texto_section">
+            <h2 class="title_section">¿Quienes somos?</h2>
+            <p class="parrafo_section">
+              Somos un negocio que se dedica al arte corporal, específicamente
+              al área del tatuaje el cual es antendido y administrado únicamente
+              por su dueño.
+            </p>
+          </div>
+          <div class="img_section">
+            <img
+              src="assets/images/aboutus/quienessomos.png"
+              alt="imágen de presentacíon con el logo y redes sociales de la empresa"
+              class="img_apartado"
+            />
+          </div>
+        </article>
+      </section>
+      <!-- Sección de Servicios -->
+      <section class="services section" id="services">
+        <article class="contenedor">
+          <div class="img_section">
+            <img
+              class="img_apartado"
+              src="assets/images/inicio/tatto_buho.png"
+              alt="imágen de un tatuaje de buho"
+            />
+          </div>
+          <div class="texto_section">
+            <h2 class="title_section">Servicios</h2>
+            <p class="parrafo_section">
+              Como ya se menciono ofrecemos un servicio de tatuajes, con un
+              costo mínimo que puede variar según ciertas características que
+              usted desee.
+            </p>
+            <p class="parrafo_section">
+              Si estas interesado contáctenos por nuestras redes sociales para
+              agendar tu cita
+            </p>
+          </div>
+        </article>
+      </section>
+      <!-- Sección de Artículos -->
+      <section class="articulos" id="articulos">
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide pointer-event"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="carousel-cards">
+                <img
+                  class="carousel_img-izq"
+                  src="assets/images/designs/a8.png"
+                  alt="imagen de tatuajes"
+                />
+                <img
+                  src="assets/images/designs/a3.png"
+                  alt="imagen de tatuajes"
+                />
+                <img
+                  src="assets/images/designs/a4.png"
+                  alt="imagen de tatuajes"
+                />
+                <img
+                  src="assets/images/designs/t1.png"
+                  alt="imagen de tatuajes"
+                />
+                <img
+                  class="carousel_img-der"
+                  src="assets/images/designs/s10.png"
+                  alt="imagen de tatuajes"
+                />
+              </div>
+              <div class="carousel-caption">
+                <h5>Fotos</h5>
+                <p class="caption_parrafo">
+                  Podrás ver varios trabajos realizados por nosotros y así tomar
+                  ideas para tu diseño.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <video
+                id="video"
+                class="video_carousel1"
+                src="assets/videos/catrina.mp4"
+                controls
+              ></video>
+              <video
+                class="video_carousel2"
+                src="assets/videos/batman.mp4"
+                controls
+              ></video>
+              <div class="carousel-caption">
+                <h5>Videos</h5>
+                <p class="caption_parrafo">
+                  Puedes ver algunos videos sobre nuestro proceso de trabajo en
+                  esta sección.
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contactos" class="footer">
+      <div class="info-contacto">
+        <h3 class="title-footer">Contáctenos</h3>
+        <div class="columns">
+          <ul>
+            <li>
+              <a
+                href="https://api.whatsapp.com/send/?phone=50685550337&text&type=phone_number&app_absent=0"
+                target="_blank"
+                ><i class="fa-brands fa-whatsapp"></i
+                ><span> +(506)8555-0337</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/badilla_edu.art/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"> </i
+                ><span> @badilla_edu.art</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.facebook.com/eddobadillatattoo"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+                ><span> Eduardo Badilla Tattoos</span></a
+              >
+            </li>
+          </ul>
+          <ul>
+            <li>
+              <a
+                href="https://www.tiktok.com/@eddobadillatattoo"
+                target="_blank"
+                ><i class="fa-brands fa-tiktok"></i
+                ><span> @eddobadillatattoo</span></a
+              >
+            </li>
+            <li>
+              <a href="https://twitter.com/BadillaEddo" target="_blank"
+                ><i class="fa-brands fa-twitter"></i
+                ><span> @BadillaEddo</span></a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="info-direccion">
+        <h4 class="title-footer">Dirección</h4>
+        <p>
+          <i class="fa-solid fa-location-dot"></i> Costado Este del parque
+          Palmares, frente a parada de taxis, en Alajuela centro., Alajuela,
+          Costa Rica, 20101
+        </p>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/db9da4ce5b.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="JS/ejecutarVideo.js" type="text/javascript" async></script>
+  </body>
+</html>
