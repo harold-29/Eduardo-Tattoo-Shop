@@ -9,8 +9,17 @@
     grid-area: service-text;
   }
 
-  .servicios-horario .contenedor .img_section {
+  .servicios-horario .contenedor .table_section {
     grid-area: service-img;
+  }
+}
+
+@media( max-width: 1460px){
+  .servicios-horario .contenedor{
+    grid-template-columns: 1, 1fr;
+    grid-template-areas: 
+    "service-text"
+    "service-img";
   }
 }
 
